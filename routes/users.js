@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const CyclicDB = require('@cyclic.sh/dynamodb');
-const db = CyclicDB(process.env.Cyclic_DB);
+const db = CyclicDB(process.env.CYCLIC_DB);
 let users = db.collection('users');
 
 /* GET users listing. */
